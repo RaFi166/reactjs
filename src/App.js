@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import First from './my-components/First';
+import Second from './my-components/Second';
+import ClassOne from './my-components/ClassOne';
+import ClassTwo from './my-components/ClassSecond';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <First name='This is the first functional component'></First>
+      <Second name='This is the second functional componenets'></Second>
+      <ClassOne age='I am 24 years old'></ClassOne>
+      <ClassTwo address='I live in Uttara-10'></ClassTwo>
+
     </div>
   );
 }
